@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  font-family: "open sans", san-serif;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  width: 90%; 
+}
+
+
+h1 {
+  color: #0D1099;
+  left: 10.1rem;
+  position: relative;
+}
+
+code { 
+  margin-bottom: 2rem;  
+  line-height: 1.5;
+  display: block;
+  background-color: #FFEB7D;
+  padding: 1rem 0.5rem;
+  font-weight: bold;
+  width: 88%; 
+}
+img {
+  width: 81%;
+  height: auto;
+}
+
+#navbar {
+  position: fixed;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  height: auto;
+  top: 6%;
+  padding: 2.3rem 4rem;
+  left: 5%;  
+}
+
+#navbar li {
+  list-style-type: none;
+  text-align: center;
+  position: relative;
+  right: 2.3rem;
+  padding-top: 2.5rem;
+}
+
+.main-section {
+  margin: 0 10rem;
+}
+nav header {
+  color: #0D1099;
+  font-weight: bold;
+  text-align: center;
+}
+
+main header {  
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #0D1099;
+}
+
+main ul {
+  line-height: 2;
+}
+
+.nav-link:link, .nav-link:visited {
+  color: black;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+#main-doc {
+  margin-left: 20rem;
+}
+@media only screen and (max-width: 1450px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  header {
+    font-size: 1rem
+  }
+  p { 
+    font-size: 0.95rem;  
+    line-height: 2.5;   
+    padding: 0;
+    min-width: 100%;
+  }
+  #navbar {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+  #main-doc {
+    margin-left: 10rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+    #main-doc {
+    position: absolute;
+    top: 35%;  
+    margin: 0 auto; 
+    margin-left: 1.5rem;
+    min-width: 170%;     
+    padding: 0;   
+  }
+  #navbar {    
+    position: absolute;      
+    top: 3rem;
+    padding: 0;  
+    min-width: 100%;  
+    margin: 0;   
+    left: 12rem;      
+  }
+}

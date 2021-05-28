@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./styles/styles.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>Menu</header>
+    <ul>
+      <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+      <li><a href="#Absolute" class="nav-link">Absolute</a></li>
+      <li><a href="#Fixed" class="nav-link">Fixed</a></li>
+      <li><a href="#Relative" class="nav-link">Relative</a></li>
+      <li><a href="#Sticky" class="nav-link">Sticky</a></li>
+      <li><a href="#References" class="nav-link">References</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <h1>CSS Position Property </h1>
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p></p>
+      <p>In CSS, the position property specifies the type of positioning method used for an element (static, relative,
+        absolute, fixed, or sticky).
+        The <strong>top</strong>, <strong>bottom</strong>, <strong>left</strong>, and <strong>right</strong> properties
+        can be used to determine the final location
+        of positioned elements. We will focus on the most commonly used position values i.e
+        absolute, fixed, relative, and sticky.</p>
+      <p>For the four position attributes, we will provide the following information:</p>
+      <code>
+        html_element {
+          position: absolute;
+          border: 1px solid red;
+          top: 70px;
+          right: 15px;
+      }
+      </code>
+      <ul>
+        <li>A brief explanation of how it works</li>
+        <li>Sample code highlighting how to use the property</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Absolute">
+      <header>Absolute</header>
+      <p>The element is removed from the normal document flow, and no space is created for the element in the page
+        layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative
+        to the initial containing block. Its final position is determined by the values of <strong>top</strong>,
+        <strong>bottom</strong>, <strong>left</strong>, and <strong>right</strong>.
+      </p>
+      <code>
+        html_element {
+          position: absolute;
+          border: 1px solid red;
+          top: 70px;
+          right: 15px;
+      }
+    </code>
+    </section>
+    <section class="main-section" id="Fixed">
+      <header>Fixed</header>
+      <p>The element is removed from the normal document flow, and no space is created for the element in the page
+        layout. It is positioned relative to the initial containing block established by the viewport, except when one
+        of its ancestors has a transform, perspective, or filter property set to something other than none, in which
+        case that ancestor behaves as the containing block. (Note that there are browser
+        inconsistencies with perspective and filter contributing to containing block formation.) Its final position is
+        determined by the values of <strong>top</strong>,
+        <strong>bottom</strong>, <strong>left</strong>, and <strong>right</strong>.
+      </p>
+      <code>
+        html_element {
+          position: fixed;
+          top: 80px;
+          left: 10px;
+          background: blue;
+        }
+    </code>
+    </section>
+    <section class="main-section" id="Relative">
+      <header>Relative</header>
+      <p>The element is positioned according to the normal flow of the document, and then offset relative to itself
+        based on the values of top, right, bottom, and left. The offset does not affect the position of any other
+        elements; thus, the space given for the element in the page layout is the same as if position were static.</p>
+      <code>
+          html_element {
+            position: relative;
+            border: 1px solid blue;
+            width: 300px;
+            height: 100px;
+          }
+      </code>
+    </section>
+    <section class="main-section" id="Sticky">
+      <header>Sticky</header>
+      <p>The element is positioned according to the normal flow of the document, and then offset relative to its nearest
+        scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based
+        on the values of <strong>top</strong>,
+        <strong>bottom</strong>, <strong>left</strong>, and <strong>right</strong>. The offset does not affect the position of any other elements.
+      </p>
+      <code>
+        html_element {
+          position: sticky; top: 50px;
+        }
+    </code>
+    </section>
+    <section class="main-section" id="References">
+      <header>References</header>
+      <p>The material in this document was sourced from:
+      </p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">Mozilla Developer Network</a></li>
+        <li><a href="https://www.w3schools.com/cssref/pr_class_position.asp">W3 Schools</a></li>
+        <li><a href="https://css-tricks.com/almanac/properties/p/position/">CSS Tricks</a></li>
+      </ul>
+      <p>For more information on each of the discussed position values and the others that were not discussed, visit the
+        above listed websites.</p>
+      <p>The position property is one of five key properties for controlling display and positioning in CSS. The four
+        other properties are <strong>display</strong>,<strong> z-index</strong>,<strong> float</strong>, and
+        <strong> clear</strong>.</p>
+      <P>For further reading, find links to the other four display and positioning CSS properties:</P>
+      <ul>
+        <li><a href="https://css-tricks.com/almanac/properties/d/display/">Display</a></li>
+        <li><a href="https://css-tricks.com/almanac/properties/z/z-index/">Z-index</a></li>
+        <li><a href="https://css-tricks.com/all-about-floats/">Float</a></li>
+        <li><a href="https://css-tricks.com/almanac/properties/c/clear/">Clear</a></li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+
+</html>
